@@ -58,3 +58,12 @@ numcols = names(data_landings1, findall(x -> eltype(x) <: Number, eachcol(data_l
 # nilai aggregat yg digitung jg bisa disesuaikan dengan menentukan colom apa saja di numcols
 combine(groupby(data_landings1, [:Year, :Gear]), numcols .=> sum .=> numcols)
 
+bar(data_tahun_alat[:Year], 
+data_tahun_alat[:Weight_kg], 
+title="Total Tangkapan (Kg) per-Tahun",
+label="total (kg)",
+xlabel="Tahun",
+ylabel="Tangkapan (Kg) ")
+
+savefig("hasil_1.png")
+
