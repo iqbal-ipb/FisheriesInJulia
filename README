@@ -1,3 +1,6 @@
-![alt text](https://github.com/iqbal-ipb/FisheriesInJulia/blob/main/FisheriesInJulia.png)
+<p align="center">
+  <img src="https://github.com/iqbal-ipb/FisheriesInJulia/blob/main/FisheriesInJulia.png">
+</p>
+
 Tutorial mengolah data Perikanan menggunakan bahasa pemrograman Julia, tutorial ini menerjemahkan artikel 
 https://sfg-ucsb.github.io/fishery-manageR/ yang menggunakan bahasa R.
