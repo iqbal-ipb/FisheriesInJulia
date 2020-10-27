@@ -1,6 +1,7 @@
 using CSV, Plots, DataFrames
 import GR
 # membaca file CSV 
+# periksa file CSV yang digunakan seperti tanda pemisal (delim), menggunakan judul kolom (header), dan kolom dgn format tanggal
 data_landings = CSV.read("Perikanan/sample_landings_data_raw.csv", header=true, delim=',', ignorerepeated=true, dateformat="m/dd/yyyy")
 colnames = ["Year","Date","Trip_ID","Effort_Hours","Gear","Species","Length_cm","Weight_gram"]
 # mengganti judul dari setiap kolom
