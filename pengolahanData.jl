@@ -56,7 +56,7 @@ numcols = names(data_landings1, findall(x -> eltype(x) <: Number, eachcol(data_l
 # melakukan grouping dan agregasi nilai misal sum 
 # grouping terhadapa kolom Year dan Gear, ini bisa disesuaikan dengan kebutuhan
 # nilai aggregat yg digitung jg bisa disesuaikan dengan menentukan colom apa saja di numcols
-combine(groupby(data_landings1, [:Year, :Gear]), numcols .=> sum .=> numcols)
+data_tahun_alat = combine(groupby(data_landings1, [:Year, :Gear]), numcols .=> sum .=> numcols)
 
 bar(data_tahun_alat[:Year], 
 data_tahun_alat[:Weight_kg], 
